@@ -1,0 +1,3 @@
+[submodule "vendor/Profiler"]
+	path = vendor/Profiler
+	url = https://github.com/onthegrid007/Profiler
