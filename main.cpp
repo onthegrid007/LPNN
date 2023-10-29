@@ -45,8 +45,8 @@ int main() {
         {1, Layer<T>::ActivationFunction::TANH}
     };
     const Net<T>::Topology top2{
-        {160, Layer<T>::ActivationFunction::TANH},
-        {256, Layer<T>::ActivationFunction::TANH},
+        {264, Layer<T>::ActivationFunction::TANH},
+        // {256, Layer<T>::ActivationFunction::TANH},
         {1024, Layer<T>::ActivationFunction::TANH},
         {512, Layer<T>::ActivationFunction::TANH},
         // {1024, Layer<T>::ActivationFunction::TANH},
@@ -56,7 +56,7 @@ int main() {
         {256, Layer<T>::ActivationFunction::TANH}
     };
     Net<T> net{top2};
-    std::ifstream acc("acc.text");//")
+    std::ifstream acc("btc.txt");
     std::string line;
     std::vector<T> in, tar;
     for(int i{0}; i < 100000; i++) {
